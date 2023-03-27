@@ -1,0 +1,286 @@
+body,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.encabezado {
+    background-color: #fbbc02;
+    width: 100%;
+    height: 150px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.logo {
+    height: 50px;
+    width: 195px;
+    margin: 20px 0px 0px 45px;
+}
+
+header a {
+    font-size: 19px;
+    text-decoration: none;
+    color: black;
+    transition: .5s ease;
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+header div a i {
+    margin-right: 4px;
+}
+
+header a:hover {
+    color: rgb(105, 105, 105);
+}
+
+header nav ul {
+    list-style: none;
+}
+
+.banner {
+    width: 100%;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 45px;
+    margin-right: 20px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: right;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+header div a {
+    margin-left: auto;
+}
+
+header nav li a {
+    display: flex;
+    align-items: center;
+}
+
+header nav li a i {
+    margin-left: 4px;
+}
+
+.parte-stock button{
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.parte-stock button > i {
+    font-size: 25px;
+}
+
+.black-letter{
+    color: black;
+    font-size: 19px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.parte-stock{
+    display: flex;
+    margin: 0px 10px;
+    align-items: center;
+    gap: 5px;
+}
+
+.login {
+    margin-left: 10px;
+}
+
+.box-productos {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 !important;
+}
+
+.productos img {
+    width: 100%;
+}
+
+.productos div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.productos {
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 15px;
+    max-width: 420px;
+}
+
+section h2 {
+    text-align: center;
+}
+
+.productos div button {
+    background-color: #3583FA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 20px;
+}
+
+/* Productos 2*/
+
+.position-productos img {
+    width: 100%;
+}
+
+
+.position-productos {
+    position: relative;
+    padding-left: 100px;
+    padding-right: 100px;
+    max-width: 500px;
+}
+
+.position-productos p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.productos p {
+    font-weight: bold;
+}
+
+.general-productos {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+}
+
+section h2 {
+    font-weight: 400;
+}
+
+/* Registro */
+
+#form-registro {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    
+}
+
+.modal-content{
+    padding: 20px;
+}
+
+#form-registro div {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.titulo-registro{
+    text-align: center;
+    font-size: 23px;
+}
+
+.imagen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen > img{
+    height: 40%;
+    width: 60%;
+}
+
+.enviar {
+    background-color: #420DA3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 18px;
+}
+
+#form-registro > div,
+.titulo-registro,
+.enviar {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#form-registro input {
+    margin-left: 2px;
+    display: inline;
+}
+
+footer div > ul{
+    list-style: none;
+}
+
+footer ul > li{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    padding: 20px;
+}
+
+footer i{
+    font-size: 20px;
+}
+
+.footer-contenedor{
+    border-right: 1px solid grey;
+}
+
+footer > .row > div{
+    margin-top: 10px;
+} 
+
+footer form{
+    display: flex;
+    align-items: center;
+}
+
+.boton-footer{
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 576px) {
+    .footer-email{
+        text-align: center;
+    }
+
+    footer form{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .footer-contenedor{
+        border-right: none;
+    }
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mercado Liebre</title>
+    
+</head>
+
+<body>
+    <header class="encabezado">
+        <div>
+            <img class="logo" src="./img/mercado-liebre.png" alt="logo-mercado-liebre">
+            <a href="">
+                <i class='bx bxs-chat'></i>
+                Todas las opiniones en un mismo lugar
+            </a>
+        </div>
+        <nav>
+            <div>
+                <a href="">Todos los productos</a>
+                <div class="parte-stock">
+                    <p class="black-letter">Productos en stock: </p><p class="black-letter" id="productos-stock">0</p>
+                    <button  type="button" id="boton-sumar-stock">
+                        <i class='bx bx-plus-circle'></i>
+                    </button>
+                    <button  type="button" id="boton-restar-stock">
+                        <i class='bx bx-minus-circle'></i>
+                    </button>
+                </div>
+            </div>
+            <ul>
+                <li>
+                    <a href="" data-bs-target="#modal-registro" data-bs-toggle="modal">
+                        Creá tu cuenta
+                        <i class='bx bxs-user-detail'></i>
+                    </a>
+                </li>
+                <li class="login">
+                    <a href="">
+                        Ingresá
+                        <i class='bx bx-log-in'></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/banner1.jpg" class="d-block w-100" alt="banner1">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/banner2.jpg" class="d-block w-100" alt="banner2">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <main class="container-fluid">
+        <!-- <section class="banner">
+            <img src="./img/banner1.jpg" alt="">
+        </section> -->
+        <section class="general-productos">
+            <h2>Disfruta nuestras ofertas</h2>
+            <div class="box-productos row">
+                <div class="productos col-xl-3 col-md-6 col-sm-12">
+                    <img src="./img/productos/img-cafetera-moulinex.jpg" alt="cafetera">
+                    <div>
+                        <p class="titulo-producto">Cafetera Moulinex</p>
+                        <button class="btn btn-primary boton-agregar-carrito">Comprar</button>
+                    </div>
+                </div>
+                <div class="productos col-xl-3 col-md-6 col-sm-12">
+                    <img src="./img/productos/img-macbook-pro-2019.jpg" alt="notebook">
+                    <div>
+                        <p class="titulo-producto">Macbook Pro 2019</p>
+                        <button class="btn btn-primary boton-agregar-carrito">Comprar</button>
+                    </div>
+                </div>
+                <div class="productos col-xl-3 col-md-6 col-sm-12">
+                    <img src="./img/productos/img-samsung-galaxy-s10.jpg" alt="celular">
+                    <div>
+                        <p class="titulo-producto">Samsung Galaxy S10</p>
+                        <button class="btn btn-primary boton-agregar-carrito">Comprar</button>
+                    </div>
+                </div>
+                <div class="productos col-xl-3 col-md-6 col-sm-12">
+                    <img src="./img/productos/img-tv-samsung-smart.jpg" alt="tv">
+                    <div>
+                        <p class="titulo-producto">TV Samsung Smart</p>
+                        <button class="btn btn-primary boton-agregar-carrito">Comprar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="general-productos">
+            <h2>Productos destacados</h2>
+            <div class="box-productos row">
+                <div class="productos position-productos col-md-6 col-sm-12">
+                    <img src="img/productos/img-samsung-galaxy-s10.jpg" alt="celular">
+                    <p>Smartphone Samsung Galaxy</p>
+                </div>
+                <div class="productos position-productos col-md-6 col-sm-12">
+                    <img src="img/productos/img-tv-samsung-smart.jpg" alt="tv">
+                    <p>TV Samsung Smart</p>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="carrito" class="container-carrito">
+            <h2>Carrito</h2>
+            <p class="black-letter" id="carrito-vacio">Vacio</p>
+        </section>
+        <hr>
+        <section id="creadores">
+            <button id="boton-creadores" class="btn btn-outline-primary">Mostrar creadores</button>
+
+        </section>
+    </main>
+    <footer>
+        <hr>
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-sm-12 footer-contenedor">
+                <h3>
+                    Seguinos
+                </h3>
+                <ul>
+                    <li><i class='bx bxl-facebook'></i>Facebook</li>
+                    <li><i class='bx bxl-instagram'></i>Instagram</li>
+                    <li><i class='bx bxl-linkedin'></i>Linkedin</li>
+                    <li><i class='bx bxl-youtube'></i>Youtube</li>
+                </ul>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12 footer-contenedor">
+                <h3>
+                    Otros servicios
+                </h3>
+                <ul>
+                    <li>MercadoLiebre Pago</li>
+                    <li>MercadoLiebre Shops</li>
+                    <li>Liebre Envios</li>
+                </ul>
+            </div>
+            <div class="col-xl-4 col-sm-12 footer-email">
+                <h3>
+                    Trabaja con nosotros
+                </h3>
+                <form>
+                    <input type="text" placeholder="Ingresa tu email">
+                    <input class="btn btn-primary boton-footer" type="submit" value="Enviar">
+                </form>
+            </div>
+        </div>
+    </footer>
+    <div id="modal-registro" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="imagen">
+                    <img src="./img/mercado-liebre.png" alt="logo">
+                </div>
+                <h2 class="titulo-registro">Registro</h2>
+                <form id="form-registro" action="">
+                    <div>
+                        <label for="nombre">Nombre: </label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email">
+                    </div>
+                    <div>
+                        <label for="pass">Contraseña: </label>
+                        <input type="password" id="pass">
+                    </div>
+                </form>
+                <input class="enviar" type="submit" value="Registrar">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
